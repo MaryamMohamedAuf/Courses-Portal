@@ -29,12 +29,11 @@ class AchievementFactory extends Factory
         ];
 
         // Randomly select one of the predefined achievements
-        $achievement = $this->faker->randomElement($achievementData);
 
         return [
-            'name' => $achievement['name'],
-            'type' => $achievement['type'],
-            'threshold' => $achievement['threshold'],
+            'name' => $achievementData[0]['name'],
+            'type' => $achievementData[0]['type'],
+            'threshold' => $achievementData[0]['threshold'],
         ];
     }
 }

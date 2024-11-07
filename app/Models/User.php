@@ -6,11 +6,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable;
+    use HasFactory, HasApiTokens, Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -49,7 +50,7 @@ class User extends Authenticatable
 
 public function achievements()
 {
-    return $this->belongsToMany(Achievement::class, 'user_achievements');
+    return $this->belongsToMany(Achievement::class, 'user_achievement');
 }
 
 public function badge()
@@ -57,15 +58,18 @@ public function badge()
     return $this->belongsTo(Badge::class);
 }
 
-public function Lessons()
+public function lessons()
 {
-    return $this->hasMany(Lesson::class, 'user_Lessons');
+    return $this->belongsToMany(Lesson::class, 'user_lesson')->withTimestamps();
 }
 
 public function comments()
 {
     return $this->hasMany(Comment::class);
 }
-
+public function courses()
+{
+    return $this->belongsToMany(Course::class, 'user_course')->withTimestamps();
+}
 
 }

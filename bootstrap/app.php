@@ -11,8 +11,34 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        $middleware->validateCsrfTokens(except: [
+            'auth/*',
+            'api/*',
+            'register',
+            'login',
+            '/*'
+            
+        ]);
+    })
+    
+    ->withMiddleware(function (Middleware $middleware) {
+        $middleware->api(prepend: [
+            \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+            'throttle:api',
+        //The throttle middleware is used for rate limiting,
+        //which controls how many requests a user can make to the API within a specified time frame.
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        \Illuminate\Session\Middleware\StartSession::class,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+        ]);
+
+        $middleware->alias([
+            'verified' => \App\Http\Middleware\EnsureEmailIsVerified::class,
+        ]);
+
         //
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
+   

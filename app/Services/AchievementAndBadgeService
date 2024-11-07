@@ -34,7 +34,6 @@ class AchievementAndBadgeService
             }
     }
     }
-
     private function checkCommentAchievements(User $user)
     {
         $commentsCount = $user->comments()->count();

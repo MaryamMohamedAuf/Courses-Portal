@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
@@ -28,7 +29,24 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'content' => 'required|string|min:3|max:1000',
+        ]);
+
+        // Find the lesson by ID
+
+        // Create a new comment
+        $comment = Comment::create([
+            'user_id' => Auth::id(),
+           // 'lesson_id' => $lesson->id,
+            'content' => $request->content,
+        ]);
+
+        // Return response with the created comment
+        return response()->json([
+            'message' => 'Comment successfully added.',
+            'comment' => $comment,
+        ], 201);
     }
 
     /**

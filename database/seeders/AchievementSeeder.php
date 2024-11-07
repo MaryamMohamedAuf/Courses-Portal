@@ -9,6 +9,17 @@ class AchievementSeeder extends Seeder
     public function run()
     {
         // Use the factory to create predefined achievements
-        Achievement::factory()->count(10)->create();
-    }
+        Achievement::insert([
+            ['name' => 'First Lesson Watched', 'type' => 'lessons_watched', 'threshold' => 1],
+            ['name' => '5 Lessons Watched', 'type' => 'lessons_watched', 'threshold' => 5],
+            ['name' => '10 Lessons Watched', 'type' => 'lessons_watched', 'threshold' => 10],
+            ['name' => '25 Lessons Watched', 'type' => 'lessons_watched', 'threshold' => 25],
+            ['name' => '50 Lessons Watched', 'type' => 'lessons_watched', 'threshold' => 50],
+            ['name' => 'First Comment Written', 'type' => 'comments_written', 'threshold' => 1],
+            ['name' => '3 Comments Written', 'type' => 'comments_written', 'threshold' => 3],
+            ['name' => '5 Comments Written', 'type' => 'comments_written', 'threshold' => 5],
+            ['name' => '10 Comments Written', 'type' => 'comments_written', 'threshold' => 10],
+            ['name' => '20 Comments Written', 'type' => 'comments_written', 'threshold' => 20],
+        ]);
+        }
 }

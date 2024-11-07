@@ -26,7 +26,7 @@ class Lesson extends Model
     {
         return $this->belongsTo(Course::class);
     }
-    public function user()
+    public function users()
     {
     return $this->belongsToMany(User::class, 'user_lesson')->withTimestamps();
     }
