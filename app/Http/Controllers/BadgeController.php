@@ -8,58 +8,60 @@ use Illuminate\Http\Request;
 class BadgeController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the badges.
      */
     public function index()
     {
-        //
+        // Fetch all badges with their related achievements
+        $badges = Badge::all();
+        
+        return response()->json($badges);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
+    
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created badge in storage.
      */
     public function store(Request $request)
     {
-        //
+        // Validate the request
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'required_achievements' => 'required|integer|min:1',
+        ]);
+
+        // Create the badge
+        $badge = Badge::create($request->all());
+
+        return response()->json($badge, 201);
     }
 
+   
     /**
-     * Display the specified resource.
-     */
-    public function show(Badge $badge)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Badge $badge)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Update the specified badge in storage.
      */
     public function update(Request $request, Badge $badge)
     {
-        //
+        // Validate the request
+        $request->validate([
+            'name' => 'sometimes|required|string|max:255',
+            'required_achievements' => 'sometimes|required|integer|min:1',
+        ]);
+
+        // Update the badge
+        $badge->update($request->all());
+
+        return response()->json($badge);
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified badge from storage.
      */
     public function destroy(Badge $badge)
     {
-        //
+        $badge->delete();
+
+        return response()->json(['message' => 'Badge deleted successfully']);
     }
 }

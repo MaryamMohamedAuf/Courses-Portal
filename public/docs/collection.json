@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "af7541e0-35f0-4ed8-8a41-29a84a217b45",
+        "_postman_id": "962c183c-85bd-4b9b-a8ee-7666be9eaf7c",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -66,7 +66,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "laravel_session=Gh1fDdVVD1Le39BWOXbJBSacAKa2PZP3PJDyksHE; expires=Fri, 08 Nov 2024 17:03:48 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                    "value": "laravel_session=qMkYQ1TGUhZQLK0E4oprdZrVVrOgkw25iMB9nmJl; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
                                 }
                             ],
                             "code": 200,
@@ -97,7 +97,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"sd\",\"instructor_name\":\"atque\"}"
+                            "raw": "{\"name\":\"mxqwvjrhmskz\",\"instructor_name\":\"doloribus\"}"
                         },
                         "description": "",
                         "auth": {
@@ -118,7 +118,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "8",
+                                    "value": "20",
                                     "description": "The ID of the course."
                                 }
                             ]
@@ -136,7 +136,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"dl\",\"instructor_name\":\"molestiae\"}"
+                            "raw": "{\"name\":\"uown\",\"instructor_name\":\"eveniet\"}"
                         },
                         "description": "",
                         "auth": {
@@ -157,7 +157,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "8",
+                                    "value": "20",
                                     "description": "The ID of the course."
                                 }
                             ]
@@ -228,7 +228,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "laravel_session=QOjbUW9tyeTvRIGVxvQzSQSJZSqnCkmGbpiWKVrT; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                    "value": "laravel_session=IfRsXQf2R5sDdSx1WADbu5DD1cGpVwtLakO4z5xq; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
                                 }
                             ],
                             "code": 200,
@@ -284,7 +284,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "laravel_session=oICPN3UAC1HuaT6cqXXhr4Dx4eYT2w5FAwWE0sPR; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                    "value": "laravel_session=ZdflZOU4yvytdajzoWvwobItLA4y0KdkLYsla31S; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
                                 }
                             ],
                             "code": 200,
@@ -315,7 +315,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"dung\",\"course_id\":\"at\"}"
+                            "raw": "{\"title\":\"untqdpnyiqdnrsdm\",\"course_id\":\"sed\"}"
                         },
                         "description": "",
                         "auth": {
@@ -336,7 +336,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "11",
+                                    "value": "14",
                                     "description": "The ID of the lesson."
                                 }
                             ]
@@ -379,11 +379,11 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "laravel_session=nJYokD4KzdndkSQifFTEMpuYAPYxbRcjytjju5MV; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                    "value": "laravel_session=zZBsNszBO6vI4dQcUinDaRASm2GDaFuJXsZmJKgY; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
                                 }
                             ],
                             "code": 404,
-                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\Lesson] 11\"\n}",
+                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\Lesson] 14\"\n}",
                             "name": ""
                         }
                     ]
@@ -443,7 +443,7 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "laravel_session=TovFrTAn0bVEgpck3lQ7ZGJDOXMMpLCCd3h9YGRK; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                    "value": "laravel_session=BxMX9ba2Bf7Pu5J6qFD6f1wV9D9z7dBjgDEu8pZU; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
                                 }
                             ],
                             "code": 404,
@@ -464,7 +464,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "8",
+                                    "value": "9",
                                     "description": "The ID of the lesson."
                                 }
                             ]
@@ -482,7 +482,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"vwjdbxwriyw\",\"course_id\":\"voluptas\"}"
+                            "raw": "{\"title\":\"mjbuwgecvyyabpey\",\"course_id\":\"magnam\"}"
                         },
                         "description": "",
                         "auth": {
@@ -503,8 +503,332 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "5",
+                                    "value": "9",
                                     "description": "The ID of the lesson."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the achievements.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/acheivements",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/acheivements"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "http:\/\/localhost:3000"
+                                },
+                                {
+                                    "key": "access-control-allow-credentials",
+                                    "value": "true"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "laravel_session=ZwuAW5FPXbkrPd9UnkWqC3jxqTFbRvsAi4tnlbHZ; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created achievement in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/acheivements",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/acheivements"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"hpfubandkrrpacwsufba\",\"type\":\"estzcepsnriahmwvrkx\",\"threshold\":4}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified achievement in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/acheivements\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/acheivements\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "11",
+                                    "description": "The ID of the acheivement."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"miiuzxnlrzggkk\",\"type\":\"plqrdzfsaflu\",\"threshold\":2}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified achievement from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/acheivements\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/acheivements\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "19",
+                                    "description": "The ID of the acheivement."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the badges.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/badges",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/badges"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "http:\/\/localhost:3000"
+                                },
+                                {
+                                    "key": "access-control-allow-credentials",
+                                    "value": "true"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "laravel_session=VGuAogtQDHJfqjh7rq5L9hSaEEyQ5X3Tk7LcAdIk; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created badge in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/badges",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/badges"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"iyrfrvbfpvbg\",\"required_achievements\":83}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified badge in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/badges\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/badges\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "13",
+                                    "description": "The ID of the badge."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"hsholvvxvynuf\",\"required_achievements\":66}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified badge from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/badges\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/badges\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "20",
+                                    "description": "The ID of the badge."
                                 }
                             ]
                         },
@@ -539,13 +863,13 @@
                                 {
                                     "id": "course_id",
                                     "key": "course_id",
-                                    "value": "18",
+                                    "value": "8",
                                     "description": "The ID of the course."
                                 },
                                 {
                                     "id": "user_id",
                                     "key": "user_id",
-                                    "value": "qui",
+                                    "value": "laudantium",
                                     "description": "The ID of the user."
                                 }
                             ]
@@ -581,7 +905,7 @@
                                 {
                                     "id": "user_id",
                                     "key": "user_id",
-                                    "value": "7",
+                                    "value": "10",
                                     "description": "The ID of the user."
                                 }
                             ]
@@ -624,11 +948,11 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "laravel_session=sGABfJIMiNYgQTE9IdGJ77QjK7vXgiDeY2kAeA8T; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                    "value": "laravel_session=yQ15JlUnraEO87DTy855fXxfEBZeo6z2L08CJrQ9; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
                                 }
                             ],
                             "code": 404,
-                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\User] 7\"\n}",
+                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\User] 10\"\n}",
                             "name": ""
                         }
                     ]
@@ -645,7 +969,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "incidunt",
+                                    "value": "quia",
                                     "description": "The ID of the api."
                                 }
                             ]
@@ -663,7 +987,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"content\":\"twsas\"}"
+                            "raw": "{\"content\":\"xnlbfwwkdsqyaa\"}"
                         },
                         "description": "",
                         "auth": {

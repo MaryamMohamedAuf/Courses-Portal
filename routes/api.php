@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AchievementController;
+use App\Http\Controllers\BadgeController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\LessonController;
@@ -8,6 +10,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('courses', CourseController::class);
 Route::resource('lessons', LessonController::class);
+Route::resource('acheivements', AchievementController::class);
+Route::resource('badges', BadgeController::class);
 
 // Route::middleware('auth:sanctum')->group(function () {
 Route::post('/courses/{course_id}/{user_id}', [CourseController::class, 'registerUserForCourse']);

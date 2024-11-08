@@ -33,7 +33,7 @@ endpoints:
           content-type: application/json
           access-control-allow-origin: 'http://localhost:3000'
           access-control-allow-credentials: 'true'
-          set-cookie: 'laravel_session=Gh1fDdVVD1Le39BWOXbJBSacAKa2PZP3PJDyksHE; expires=Fri, 08 Nov 2024 17:03:48 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+          set-cookie: 'laravel_session=qMkYQ1TGUhZQLK0E4oprdZrVVrOgkw25iMB9nmJl; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []
@@ -67,7 +67,7 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: sd
+        example: mxqwvjrhmskz
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -77,15 +77,15 @@ endpoints:
         name: instructor_name
         description: ''
         required: true
-        example: atque
+        example: doloribus
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      name: sd
-      instructor_name: atque
+      name: mxqwvjrhmskz
+      instructor_name: doloribus
     fileParameters: []
     responses: []
     responseFields: []
@@ -116,14 +116,14 @@ endpoints:
         name: id
         description: 'The ID of the course.'
         required: true
-        example: 8
+        example: 20
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: 8
+      id: 20
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -131,7 +131,7 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: dl
+        example: uown
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -141,15 +141,15 @@ endpoints:
         name: instructor_name
         description: ''
         required: true
-        example: molestiae
+        example: eveniet
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      name: dl
-      instructor_name: molestiae
+      name: uown
+      instructor_name: eveniet
     fileParameters: []
     responses: []
     responseFields: []
@@ -179,14 +179,14 @@ endpoints:
         name: id
         description: 'The ID of the course.'
         required: true
-        example: 8
+        example: 20
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: 8
+      id: 20
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -231,7 +231,7 @@ endpoints:
           content-type: application/json
           access-control-allow-origin: 'http://localhost:3000'
           access-control-allow-credentials: 'true'
-          set-cookie: 'laravel_session=QOjbUW9tyeTvRIGVxvQzSQSJZSqnCkmGbpiWKVrT; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+          set-cookie: 'laravel_session=IfRsXQf2R5sDdSx1WADbu5DD1cGpVwtLakO4z5xq; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []
@@ -272,7 +272,7 @@ endpoints:
           content-type: application/json
           access-control-allow-origin: 'http://localhost:3000'
           access-control-allow-credentials: 'true'
-          set-cookie: 'laravel_session=oICPN3UAC1HuaT6cqXXhr4Dx4eYT2w5FAwWE0sPR; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+          set-cookie: 'laravel_session=ZdflZOU4yvytdajzoWvwobItLA4y0KdkLYsla31S; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []
@@ -306,7 +306,7 @@ endpoints:
         name: title
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: dung
+        example: untqdpnyiqdnrsdm
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -316,15 +316,15 @@ endpoints:
         name: course_id
         description: 'The <code>id</code> of an existing record in the courses table.'
         required: true
-        example: at
+        example: sed
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      title: dung
-      course_id: at
+      title: untqdpnyiqdnrsdm
+      course_id: sed
     fileParameters: []
     responses: []
     responseFields: []
@@ -354,14 +354,14 @@ endpoints:
         name: id
         description: 'The ID of the lesson.'
         required: true
-        example: 11
+        example: 14
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: 11
+      id: 14
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -372,14 +372,14 @@ endpoints:
         status: 404
         content: |-
           {
-              "message": "No query results for model [App\\Models\\Lesson] 11"
+              "message": "No query results for model [App\\Models\\Lesson] 14"
           }
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           access-control-allow-origin: 'http://localhost:3000'
           access-control-allow-credentials: 'true'
-          set-cookie: 'laravel_session=nJYokD4KzdndkSQifFTEMpuYAPYxbRcjytjju5MV; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+          set-cookie: 'laravel_session=zZBsNszBO6vI4dQcUinDaRASm2GDaFuJXsZmJKgY; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []
@@ -434,7 +434,7 @@ endpoints:
           content-type: application/json
           access-control-allow-origin: 'http://localhost:3000'
           access-control-allow-credentials: 'true'
-          set-cookie: 'laravel_session=TovFrTAn0bVEgpck3lQ7ZGJDOXMMpLCCd3h9YGRK; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+          set-cookie: 'laravel_session=BxMX9ba2Bf7Pu5J6qFD6f1wV9D9z7dBjgDEu8pZU; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []
@@ -465,14 +465,14 @@ endpoints:
         name: id
         description: 'The ID of the lesson.'
         required: true
-        example: 8
+        example: 9
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: 8
+      id: 9
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -480,7 +480,7 @@ endpoints:
         name: title
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: vwjdbxwriyw
+        example: mjbuwgecvyyabpey
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -490,15 +490,15 @@ endpoints:
         name: course_id
         description: 'The <code>id</code> of an existing record in the courses table.'
         required: true
-        example: voluptas
+        example: magnam
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      title: vwjdbxwriyw
-      course_id: voluptas
+      title: mjbuwgecvyyabpey
+      course_id: magnam
     fileParameters: []
     responses: []
     responseFields: []
@@ -528,14 +528,432 @@ endpoints:
         name: id
         description: 'The ID of the lesson.'
         required: true
-        example: 5
+        example: 9
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: 5
+      id: 9
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/acheivements
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the achievements.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: 'http://localhost:3000'
+          access-control-allow-credentials: 'true'
+          set-cookie: 'laravel_session=ZwuAW5FPXbkrPd9UnkWqC3jxqTFbRvsAi4tnlbHZ; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/acheivements
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created achievement in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: hpfubandkrrpacwsufba
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      type:
+        name: type
+        description: 'Must not be greater than 50 characters.'
+        required: true
+        example: estzcepsnriahmwvrkx
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      threshold:
+        name: threshold
+        description: ''
+        required: true
+        example: 4
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      name: hpfubandkrrpacwsufba
+      type: estzcepsnriahmwvrkx
+      threshold: 4
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/acheivements/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified achievement in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the acheivement.'
+        required: true
+        example: 11
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 11
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: miiuzxnlrzggkk
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      type:
+        name: type
+        description: 'Must not be greater than 50 characters.'
+        required: true
+        example: plqrdzfsaflu
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      threshold:
+        name: threshold
+        description: ''
+        required: true
+        example: 2
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      name: miiuzxnlrzggkk
+      type: plqrdzfsaflu
+      threshold: 2
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/acheivements/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified achievement from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the acheivement.'
+        required: true
+        example: 19
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 19
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/badges
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the badges.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: 'http://localhost:3000'
+          access-control-allow-credentials: 'true'
+          set-cookie: 'laravel_session=VGuAogtQDHJfqjh7rq5L9hSaEEyQ5X3Tk7LcAdIk; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/badges
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created badge in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: iyrfrvbfpvbg
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      required_achievements:
+        name: required_achievements
+        description: 'Must be at least 1.'
+        required: true
+        example: 83
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      name: iyrfrvbfpvbg
+      required_achievements: 83
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/badges/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified badge in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the badge.'
+        required: true
+        example: 13
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 13
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: hsholvvxvynuf
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      required_achievements:
+        name: required_achievements
+        description: 'Must be at least 1.'
+        required: true
+        example: 66
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      name: hsholvvxvynuf
+      required_achievements: 66
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/badges/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified badge from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the badge.'
+        required: true
+        example: 20
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 20
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -569,7 +987,7 @@ endpoints:
         name: course_id
         description: 'The ID of the course.'
         required: true
-        example: 18
+        example: 8
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -579,15 +997,15 @@ endpoints:
         name: user_id
         description: 'The ID of the user.'
         required: true
-        example: qui
+        example: laudantium
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      course_id: 18
-      user_id: qui
+      course_id: 8
+      user_id: laudantium
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -621,14 +1039,14 @@ endpoints:
         name: user_id
         description: 'The ID of the user.'
         required: true
-        example: 7
+        example: 10
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      user_id: 7
+      user_id: 10
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -639,14 +1057,14 @@ endpoints:
         status: 404
         content: |-
           {
-              "message": "No query results for model [App\\Models\\User] 7"
+              "message": "No query results for model [App\\Models\\User] 10"
           }
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           access-control-allow-origin: 'http://localhost:3000'
           access-control-allow-credentials: 'true'
-          set-cookie: 'laravel_session=sGABfJIMiNYgQTE9IdGJ77QjK7vXgiDeY2kAeA8T; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+          set-cookie: 'laravel_session=yQ15JlUnraEO87DTy855fXxfEBZeo6z2L08CJrQ9; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []
@@ -676,14 +1094,14 @@ endpoints:
         name: id
         description: 'The ID of the api.'
         required: true
-        example: incidunt
+        example: quia
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: incidunt
+      id: quia
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -691,14 +1109,14 @@ endpoints:
         name: content
         description: 'Must be at least 3 characters. Must not be greater than 1000 characters.'
         required: true
-        example: twsas
+        example: xnlbfwwkdsqyaa
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      content: twsas
+      content: xnlbfwwkdsqyaa
     fileParameters: []
     responses: []
     responseFields: []

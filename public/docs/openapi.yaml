@@ -44,12 +44,12 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: sd
+                  example: mxqwvjrhmskz
                   nullable: false
                 instructor_name:
                   type: string
                   description: ''
-                  example: atque
+                  example: doloribus
                   nullable: false
               required:
                 - name
@@ -74,12 +74,12 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: dl
+                  example: uown
                   nullable: false
                 instructor_name:
                   type: string
                   description: ''
-                  example: molestiae
+                  example: eveniet
                   nullable: false
               required:
                 - name
@@ -99,7 +99,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the course.'
-        example: 8
+        example: 20
         required: true
         schema:
           type: integer
@@ -140,12 +140,12 @@ paths:
                 title:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: dung
+                  example: untqdpnyiqdnrsdm
                   nullable: false
                 course_id:
                   type: string
                   description: 'The <code>id</code> of an existing record in the courses table.'
-                  example: at
+                  example: sed
                   nullable: false
               required:
                 - title
@@ -187,11 +187,11 @@ paths:
               schema:
                 type: object
                 example:
-                  message: 'No query results for model [App\Models\Lesson] 11'
+                  message: 'No query results for model [App\Models\Lesson] 14'
                 properties:
                   message:
                     type: string
-                    example: 'No query results for model [App\Models\Lesson] 11'
+                    example: 'No query results for model [App\Models\Lesson] 14'
       tags:
         - Endpoints
       security: []
@@ -213,12 +213,12 @@ paths:
                 title:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: vwjdbxwriyw
+                  example: mjbuwgecvyyabpey
                   nullable: false
                 course_id:
                   type: string
                   description: 'The <code>id</code> of an existing record in the courses table.'
-                  example: voluptas
+                  example: magnam
                   nullable: false
               required:
                 - title
@@ -238,7 +238,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the lesson.'
-        example: 11
+        example: 14
         required: true
         schema:
           type: integer
@@ -273,6 +273,210 @@ paths:
         required: true
         schema:
           type: integer
+  /api/acheivements:
+    get:
+      summary: 'Display a listing of the achievements.'
+      operationId: displayAListingOfTheAchievements
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                example: []
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created achievement in storage.'
+      operationId: storeANewlyCreatedAchievementInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: hpfubandkrrpacwsufba
+                  nullable: false
+                type:
+                  type: string
+                  description: 'Must not be greater than 50 characters.'
+                  example: estzcepsnriahmwvrkx
+                  nullable: false
+                threshold:
+                  type: integer
+                  description: ''
+                  example: 4
+                  nullable: false
+              required:
+                - name
+                - type
+                - threshold
+      security: []
+  '/api/acheivements/{id}':
+    put:
+      summary: 'Update the specified achievement in storage.'
+      operationId: updateTheSpecifiedAchievementInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: miiuzxnlrzggkk
+                  nullable: false
+                type:
+                  type: string
+                  description: 'Must not be greater than 50 characters.'
+                  example: plqrdzfsaflu
+                  nullable: false
+                threshold:
+                  type: integer
+                  description: ''
+                  example: 2
+                  nullable: false
+              required:
+                - name
+                - type
+                - threshold
+      security: []
+    delete:
+      summary: 'Remove the specified achievement from storage.'
+      operationId: removeTheSpecifiedAchievementFromStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the acheivement.'
+        example: 11
+        required: true
+        schema:
+          type: integer
+  /api/badges:
+    get:
+      summary: 'Display a listing of the badges.'
+      operationId: displayAListingOfTheBadges
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                example: []
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created badge in storage.'
+      operationId: storeANewlyCreatedBadgeInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: iyrfrvbfpvbg
+                  nullable: false
+                required_achievements:
+                  type: integer
+                  description: 'Must be at least 1.'
+                  example: 83
+                  nullable: false
+              required:
+                - name
+                - required_achievements
+      security: []
+  '/api/badges/{id}':
+    put:
+      summary: 'Update the specified badge in storage.'
+      operationId: updateTheSpecifiedBadgeInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: hsholvvxvynuf
+                  nullable: false
+                required_achievements:
+                  type: integer
+                  description: 'Must be at least 1.'
+                  example: 66
+                  nullable: false
+              required:
+                - name
+                - required_achievements
+      security: []
+    delete:
+      summary: 'Remove the specified badge from storage.'
+      operationId: removeTheSpecifiedBadgeFromStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the badge.'
+        example: 13
+        required: true
+        schema:
+          type: integer
   '/api/courses/{course_id}/{user_id}':
     post:
       summary: ''
@@ -288,7 +492,7 @@ paths:
         in: path
         name: course_id
         description: 'The ID of the course.'
-        example: 18
+        example: 8
         required: true
         schema:
           type: integer
@@ -296,7 +500,7 @@ paths:
         in: path
         name: user_id
         description: 'The ID of the user.'
-        example: qui
+        example: laudantium
         required: true
         schema:
           type: string
@@ -314,11 +518,11 @@ paths:
               schema:
                 type: object
                 example:
-                  message: 'No query results for model [App\Models\User] 7'
+                  message: 'No query results for model [App\Models\User] 10'
                 properties:
                   message:
                     type: string
-                    example: 'No query results for model [App\Models\User] 7'
+                    example: 'No query results for model [App\Models\User] 10'
       tags:
         - Endpoints
       security: []
@@ -327,7 +531,7 @@ paths:
         in: path
         name: user_id
         description: 'The ID of the user.'
-        example: 7
+        example: 10
         required: true
         schema:
           type: integer
@@ -350,7 +554,7 @@ paths:
                 content:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 1000 characters.'
-                  example: twsas
+                  example: xnlbfwwkdsqyaa
                   nullable: false
               required:
                 - content
@@ -360,7 +564,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the api.'
-        example: incidunt
+        example: quia
         required: true
         schema:
           type: string

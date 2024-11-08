@@ -104,6 +104,30 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-lessons--id-">
                                 <a href="#endpoints-DELETEapi-lessons--id-">Remove the specified lesson from storage.</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-acheivements">
+                                <a href="#endpoints-GETapi-acheivements">Display a listing of the achievements.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-acheivements">
+                                <a href="#endpoints-POSTapi-acheivements">Store a newly created achievement in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-acheivements--id-">
+                                <a href="#endpoints-PUTapi-acheivements--id-">Update the specified achievement in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-acheivements--id-">
+                                <a href="#endpoints-DELETEapi-acheivements--id-">Remove the specified achievement from storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-badges">
+                                <a href="#endpoints-GETapi-badges">Display a listing of the badges.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-badges">
+                                <a href="#endpoints-POSTapi-badges">Store a newly created badge in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-badges--id-">
+                                <a href="#endpoints-PUTapi-badges--id-">Update the specified badge in storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-badges--id-">
+                                <a href="#endpoints-DELETEapi-badges--id-">Remove the specified badge from storage.</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-courses--course_id---user_id-">
                                 <a href="#endpoints-POSTapi-courses--course_id---user_id-">POST api/courses/{course_id}/{user_id}</a>
                             </li>
@@ -193,7 +217,7 @@ fetch(url, {
 content-type: application/json
 access-control-allow-origin: http://localhost:3000
 access-control-allow-credentials: true
-set-cookie: laravel_session=Gh1fDdVVD1Le39BWOXbJBSacAKa2PZP3PJDyksHE; expires=Fri, 08 Nov 2024 17:03:48 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=qMkYQ1TGUhZQLK0E4oprdZrVVrOgkw25iMB9nmJl; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">[]</code>
@@ -287,8 +311,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"sd\",
-    \"instructor_name\": \"atque\"
+    \"name\": \"mxqwvjrhmskz\",
+    \"instructor_name\": \"doloribus\"
 }"
 </code></pre></div>
 
@@ -304,8 +328,8 @@ const headers = {
 };
 
 let body = {
-    "name": "sd",
-    "instructor_name": "atque"
+    "name": "mxqwvjrhmskz",
+    "instructor_name": "doloribus"
 };
 
 fetch(url, {
@@ -394,10 +418,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-courses"
-               value="sd"
+               value="mxqwvjrhmskz"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>sd</code></p>
+<p>Must not be greater than 255 characters. Example: <code>mxqwvjrhmskz</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>instructor_name</code></b>&nbsp;&nbsp;
@@ -405,10 +429,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="instructor_name"                data-endpoint="POSTapi-courses"
-               value="atque"
+               value="doloribus"
                data-component="body">
     <br>
-<p>Example: <code>atque</code></p>
+<p>Example: <code>doloribus</code></p>
         </div>
         </form>
 
@@ -425,19 +449,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/courses/8" \
+    "http://localhost:8000/api/courses/20" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"dl\",
-    \"instructor_name\": \"molestiae\"
+    \"name\": \"uown\",
+    \"instructor_name\": \"eveniet\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/courses/8"
+    "http://localhost:8000/api/courses/20"
 );
 
 const headers = {
@@ -446,8 +470,8 @@ const headers = {
 };
 
 let body = {
-    "name": "dl",
-    "instructor_name": "molestiae"
+    "name": "uown",
+    "instructor_name": "eveniet"
 };
 
 fetch(url, {
@@ -540,10 +564,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-courses--id-"
-               value="8"
+               value="20"
                data-component="url">
     <br>
-<p>The ID of the course. Example: <code>8</code></p>
+<p>The ID of the course. Example: <code>20</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -552,10 +576,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="PUTapi-courses--id-"
-               value="dl"
+               value="uown"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>dl</code></p>
+<p>Must not be greater than 255 characters. Example: <code>uown</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>instructor_name</code></b>&nbsp;&nbsp;
@@ -563,10 +587,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="instructor_name"                data-endpoint="PUTapi-courses--id-"
-               value="molestiae"
+               value="eveniet"
                data-component="body">
     <br>
-<p>Example: <code>molestiae</code></p>
+<p>Example: <code>eveniet</code></p>
         </div>
         </form>
 
@@ -583,14 +607,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/courses/8" \
+    "http://localhost:8000/api/courses/20" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/courses/8"
+    "http://localhost:8000/api/courses/20"
 );
 
 const headers = {
@@ -683,10 +707,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-courses--id-"
-               value="8"
+               value="20"
                data-component="url">
     <br>
-<p>The ID of the course. Example: <code>8</code></p>
+<p>The ID of the course. Example: <code>20</code></p>
             </div>
                     </form>
 
@@ -737,7 +761,7 @@ fetch(url, {
 content-type: application/json
 access-control-allow-origin: http://localhost:3000
 access-control-allow-credentials: true
-set-cookie: laravel_session=QOjbUW9tyeTvRIGVxvQzSQSJZSqnCkmGbpiWKVrT; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=IfRsXQf2R5sDdSx1WADbu5DD1cGpVwtLakO4z5xq; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">[]</code>
@@ -861,7 +885,7 @@ fetch(url, {
 content-type: application/json
 access-control-allow-origin: http://localhost:3000
 access-control-allow-credentials: true
-set-cookie: laravel_session=oICPN3UAC1HuaT6cqXXhr4Dx4eYT2w5FAwWE0sPR; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=ZdflZOU4yvytdajzoWvwobItLA4y0KdkLYsla31S; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -957,8 +981,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"dung\",
-    \"course_id\": \"at\"
+    \"title\": \"untqdpnyiqdnrsdm\",
+    \"course_id\": \"sed\"
 }"
 </code></pre></div>
 
@@ -974,8 +998,8 @@ const headers = {
 };
 
 let body = {
-    "title": "dung",
-    "course_id": "at"
+    "title": "untqdpnyiqdnrsdm",
+    "course_id": "sed"
 };
 
 fetch(url, {
@@ -1064,10 +1088,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-lessons"
-               value="dung"
+               value="untqdpnyiqdnrsdm"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>dung</code></p>
+<p>Must not be greater than 255 characters. Example: <code>untqdpnyiqdnrsdm</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -1075,10 +1099,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="course_id"                data-endpoint="POSTapi-lessons"
-               value="at"
+               value="sed"
                data-component="body">
     <br>
-<p>The <code>id</code> of an existing record in the courses table. Example: <code>at</code></p>
+<p>The <code>id</code> of an existing record in the courses table. Example: <code>sed</code></p>
         </div>
         </form>
 
@@ -1095,14 +1119,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/lessons/11" \
+    --get "http://localhost:8000/api/lessons/14" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/lessons/11"
+    "http://localhost:8000/api/lessons/14"
 );
 
 const headers = {
@@ -1129,11 +1153,11 @@ fetch(url, {
 content-type: application/json
 access-control-allow-origin: http://localhost:3000
 access-control-allow-credentials: true
-set-cookie: laravel_session=nJYokD4KzdndkSQifFTEMpuYAPYxbRcjytjju5MV; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=zZBsNszBO6vI4dQcUinDaRASm2GDaFuJXsZmJKgY; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;No query results for model [App\\Models\\Lesson] 11&quot;
+    &quot;message&quot;: &quot;No query results for model [App\\Models\\Lesson] 14&quot;
 }</code>
  </pre>
     </span>
@@ -1213,10 +1237,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-lessons--id-"
-               value="11"
+               value="14"
                data-component="url">
     <br>
-<p>The ID of the lesson. Example: <code>11</code></p>
+<p>The ID of the lesson. Example: <code>14</code></p>
             </div>
                     </form>
 
@@ -1267,7 +1291,7 @@ fetch(url, {
 content-type: application/json
 access-control-allow-origin: http://localhost:3000
 access-control-allow-credentials: true
-set-cookie: laravel_session=TovFrTAn0bVEgpck3lQ7ZGJDOXMMpLCCd3h9YGRK; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=BxMX9ba2Bf7Pu5J6qFD6f1wV9D9z7dBjgDEu8pZU; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -1371,19 +1395,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/lessons/8" \
+    "http://localhost:8000/api/lessons/9" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"vwjdbxwriyw\",
-    \"course_id\": \"voluptas\"
+    \"title\": \"mjbuwgecvyyabpey\",
+    \"course_id\": \"magnam\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/lessons/8"
+    "http://localhost:8000/api/lessons/9"
 );
 
 const headers = {
@@ -1392,8 +1416,8 @@ const headers = {
 };
 
 let body = {
-    "title": "vwjdbxwriyw",
-    "course_id": "voluptas"
+    "title": "mjbuwgecvyyabpey",
+    "course_id": "magnam"
 };
 
 fetch(url, {
@@ -1486,10 +1510,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-lessons--id-"
-               value="8"
+               value="9"
                data-component="url">
     <br>
-<p>The ID of the lesson. Example: <code>8</code></p>
+<p>The ID of the lesson. Example: <code>9</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1498,10 +1522,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="PUTapi-lessons--id-"
-               value="vwjdbxwriyw"
+               value="mjbuwgecvyyabpey"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>vwjdbxwriyw</code></p>
+<p>Must not be greater than 255 characters. Example: <code>mjbuwgecvyyabpey</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -1509,10 +1533,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="course_id"                data-endpoint="PUTapi-lessons--id-"
-               value="voluptas"
+               value="magnam"
                data-component="body">
     <br>
-<p>The <code>id</code> of an existing record in the courses table. Example: <code>voluptas</code></p>
+<p>The <code>id</code> of an existing record in the courses table. Example: <code>magnam</code></p>
         </div>
         </form>
 
@@ -1529,14 +1553,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/lessons/5" \
+    "http://localhost:8000/api/lessons/9" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/lessons/5"
+    "http://localhost:8000/api/lessons/9"
 );
 
 const headers = {
@@ -1629,10 +1653,1124 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-lessons--id-"
-               value="5"
+               value="9"
                data-component="url">
     <br>
-<p>The ID of the lesson. Example: <code>5</code></p>
+<p>The ID of the lesson. Example: <code>9</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-acheivements">Display a listing of the achievements.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-acheivements">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/acheivements" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/acheivements"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-acheivements">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+set-cookie: laravel_session=ZwuAW5FPXbkrPd9UnkWqC3jxqTFbRvsAi4tnlbHZ; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">[]</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-acheivements" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-acheivements"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-acheivements"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-acheivements" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-acheivements">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-acheivements" data-method="GET"
+      data-path="api/acheivements"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-acheivements', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-acheivements"
+                    onclick="tryItOut('GETapi-acheivements');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-acheivements"
+                    onclick="cancelTryOut('GETapi-acheivements');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-acheivements"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/acheivements</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-acheivements"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-acheivements"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-POSTapi-acheivements">Store a newly created achievement in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-acheivements">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/acheivements" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"hpfubandkrrpacwsufba\",
+    \"type\": \"estzcepsnriahmwvrkx\",
+    \"threshold\": 4
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/acheivements"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "hpfubandkrrpacwsufba",
+    "type": "estzcepsnriahmwvrkx",
+    "threshold": 4
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-acheivements">
+</span>
+<span id="execution-results-POSTapi-acheivements" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-acheivements"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-acheivements"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-acheivements" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-acheivements">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-acheivements" data-method="POST"
+      data-path="api/acheivements"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-acheivements', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-acheivements"
+                    onclick="tryItOut('POSTapi-acheivements');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-acheivements"
+                    onclick="cancelTryOut('POSTapi-acheivements');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-acheivements"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/acheivements</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-acheivements"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-acheivements"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="POSTapi-acheivements"
+               value="hpfubandkrrpacwsufba"
+               data-component="body">
+    <br>
+<p>Must not be greater than 255 characters. Example: <code>hpfubandkrrpacwsufba</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="type"                data-endpoint="POSTapi-acheivements"
+               value="estzcepsnriahmwvrkx"
+               data-component="body">
+    <br>
+<p>Must not be greater than 50 characters. Example: <code>estzcepsnriahmwvrkx</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>threshold</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="threshold"                data-endpoint="POSTapi-acheivements"
+               value="4"
+               data-component="body">
+    <br>
+<p>Example: <code>4</code></p>
+        </div>
+        </form>
+
+                    <h2 id="endpoints-PUTapi-acheivements--id-">Update the specified achievement in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-acheivements--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/acheivements/11" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"miiuzxnlrzggkk\",
+    \"type\": \"plqrdzfsaflu\",
+    \"threshold\": 2
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/acheivements/11"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "miiuzxnlrzggkk",
+    "type": "plqrdzfsaflu",
+    "threshold": 2
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-acheivements--id-">
+</span>
+<span id="execution-results-PUTapi-acheivements--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-acheivements--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-acheivements--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-acheivements--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-acheivements--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-acheivements--id-" data-method="PUT"
+      data-path="api/acheivements/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-acheivements--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-acheivements--id-"
+                    onclick="tryItOut('PUTapi-acheivements--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-acheivements--id-"
+                    onclick="cancelTryOut('PUTapi-acheivements--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-acheivements--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/acheivements/{id}</code></b>
+        </p>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/acheivements/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-acheivements--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-acheivements--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="PUTapi-acheivements--id-"
+               value="11"
+               data-component="url">
+    <br>
+<p>The ID of the acheivement. Example: <code>11</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="PUTapi-acheivements--id-"
+               value="miiuzxnlrzggkk"
+               data-component="body">
+    <br>
+<p>Must not be greater than 255 characters. Example: <code>miiuzxnlrzggkk</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="type"                data-endpoint="PUTapi-acheivements--id-"
+               value="plqrdzfsaflu"
+               data-component="body">
+    <br>
+<p>Must not be greater than 50 characters. Example: <code>plqrdzfsaflu</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>threshold</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="threshold"                data-endpoint="PUTapi-acheivements--id-"
+               value="2"
+               data-component="body">
+    <br>
+<p>Example: <code>2</code></p>
+        </div>
+        </form>
+
+                    <h2 id="endpoints-DELETEapi-acheivements--id-">Remove the specified achievement from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-acheivements--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/acheivements/19" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/acheivements/19"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-acheivements--id-">
+</span>
+<span id="execution-results-DELETEapi-acheivements--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-acheivements--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-acheivements--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-acheivements--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-acheivements--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-acheivements--id-" data-method="DELETE"
+      data-path="api/acheivements/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-acheivements--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-acheivements--id-"
+                    onclick="tryItOut('DELETEapi-acheivements--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-acheivements--id-"
+                    onclick="cancelTryOut('DELETEapi-acheivements--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-acheivements--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/acheivements/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-acheivements--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-acheivements--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="DELETEapi-acheivements--id-"
+               value="19"
+               data-component="url">
+    <br>
+<p>The ID of the acheivement. Example: <code>19</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-badges">Display a listing of the badges.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-badges">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/badges" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/badges"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-badges">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+set-cookie: laravel_session=VGuAogtQDHJfqjh7rq5L9hSaEEyQ5X3Tk7LcAdIk; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">[]</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-badges" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-badges"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-badges"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-badges" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-badges">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-badges" data-method="GET"
+      data-path="api/badges"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-badges', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-badges"
+                    onclick="tryItOut('GETapi-badges');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-badges"
+                    onclick="cancelTryOut('GETapi-badges');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-badges"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/badges</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-badges"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-badges"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-POSTapi-badges">Store a newly created badge in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-badges">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/badges" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"iyrfrvbfpvbg\",
+    \"required_achievements\": 83
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/badges"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "iyrfrvbfpvbg",
+    "required_achievements": 83
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-badges">
+</span>
+<span id="execution-results-POSTapi-badges" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-badges"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-badges"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-badges" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-badges">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-badges" data-method="POST"
+      data-path="api/badges"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-badges', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-badges"
+                    onclick="tryItOut('POSTapi-badges');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-badges"
+                    onclick="cancelTryOut('POSTapi-badges');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-badges"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/badges</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-badges"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-badges"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="POSTapi-badges"
+               value="iyrfrvbfpvbg"
+               data-component="body">
+    <br>
+<p>Must not be greater than 255 characters. Example: <code>iyrfrvbfpvbg</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>required_achievements</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="required_achievements"                data-endpoint="POSTapi-badges"
+               value="83"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Example: <code>83</code></p>
+        </div>
+        </form>
+
+                    <h2 id="endpoints-PUTapi-badges--id-">Update the specified badge in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-badges--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/badges/13" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"hsholvvxvynuf\",
+    \"required_achievements\": 66
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/badges/13"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "hsholvvxvynuf",
+    "required_achievements": 66
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-badges--id-">
+</span>
+<span id="execution-results-PUTapi-badges--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-badges--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-badges--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-badges--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-badges--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-badges--id-" data-method="PUT"
+      data-path="api/badges/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-badges--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-badges--id-"
+                    onclick="tryItOut('PUTapi-badges--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-badges--id-"
+                    onclick="cancelTryOut('PUTapi-badges--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-badges--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/badges/{id}</code></b>
+        </p>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/badges/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-badges--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-badges--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="PUTapi-badges--id-"
+               value="13"
+               data-component="url">
+    <br>
+<p>The ID of the badge. Example: <code>13</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="PUTapi-badges--id-"
+               value="hsholvvxvynuf"
+               data-component="body">
+    <br>
+<p>Must not be greater than 255 characters. Example: <code>hsholvvxvynuf</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>required_achievements</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="required_achievements"                data-endpoint="PUTapi-badges--id-"
+               value="66"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Example: <code>66</code></p>
+        </div>
+        </form>
+
+                    <h2 id="endpoints-DELETEapi-badges--id-">Remove the specified badge from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-badges--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/badges/20" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/badges/20"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-badges--id-">
+</span>
+<span id="execution-results-DELETEapi-badges--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-badges--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-badges--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-badges--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-badges--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-badges--id-" data-method="DELETE"
+      data-path="api/badges/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-badges--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-badges--id-"
+                    onclick="tryItOut('DELETEapi-badges--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-badges--id-"
+                    onclick="cancelTryOut('DELETEapi-badges--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-badges--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/badges/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-badges--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-badges--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="DELETEapi-badges--id-"
+               value="20"
+               data-component="url">
+    <br>
+<p>The ID of the badge. Example: <code>20</code></p>
             </div>
                     </form>
 
@@ -1649,14 +2787,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/courses/18/qui" \
+    "http://localhost:8000/api/courses/8/laudantium" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/courses/18/qui"
+    "http://localhost:8000/api/courses/8/laudantium"
 );
 
 const headers = {
@@ -1749,10 +2887,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="course_id"                data-endpoint="POSTapi-courses--course_id---user_id-"
-               value="18"
+               value="8"
                data-component="url">
     <br>
-<p>The ID of the course. Example: <code>18</code></p>
+<p>The ID of the course. Example: <code>8</code></p>
             </div>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
@@ -1760,10 +2898,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="user_id"                data-endpoint="POSTapi-courses--course_id---user_id-"
-               value="qui"
+               value="laudantium"
                data-component="url">
     <br>
-<p>The ID of the user. Example: <code>qui</code></p>
+<p>The ID of the user. Example: <code>laudantium</code></p>
             </div>
                     </form>
 
@@ -1780,14 +2918,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/users/7/achievements" \
+    --get "http://localhost:8000/api/users/10/achievements" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/users/7/achievements"
+    "http://localhost:8000/api/users/10/achievements"
 );
 
 const headers = {
@@ -1814,11 +2952,11 @@ fetch(url, {
 content-type: application/json
 access-control-allow-origin: http://localhost:3000
 access-control-allow-credentials: true
-set-cookie: laravel_session=sGABfJIMiNYgQTE9IdGJ77QjK7vXgiDeY2kAeA8T; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_session=yQ15JlUnraEO87DTy855fXxfEBZeo6z2L08CJrQ9; expires=Fri, 08 Nov 2024 17:34:27 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;No query results for model [App\\Models\\User] 7&quot;
+    &quot;message&quot;: &quot;No query results for model [App\\Models\\User] 10&quot;
 }</code>
  </pre>
     </span>
@@ -1898,10 +3036,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="user_id"                data-endpoint="GETapi-users--user_id--achievements"
-               value="7"
+               value="10"
                data-component="url">
     <br>
-<p>The ID of the user. Example: <code>7</code></p>
+<p>The ID of the user. Example: <code>10</code></p>
             </div>
                     </form>
 
@@ -1918,18 +3056,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/incidunt/comment" \
+    "http://localhost:8000/api/quia/comment" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"content\": \"twsas\"
+    \"content\": \"xnlbfwwkdsqyaa\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/incidunt/comment"
+    "http://localhost:8000/api/quia/comment"
 );
 
 const headers = {
@@ -1938,7 +3076,7 @@ const headers = {
 };
 
 let body = {
-    "content": "twsas"
+    "content": "xnlbfwwkdsqyaa"
 };
 
 fetch(url, {
@@ -2027,10 +3165,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="POSTapi--id--comment"
-               value="incidunt"
+               value="quia"
                data-component="url">
     <br>
-<p>The ID of the api. Example: <code>incidunt</code></p>
+<p>The ID of the api. Example: <code>quia</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -2039,10 +3177,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="content"                data-endpoint="POSTapi--id--comment"
-               value="twsas"
+               value="xnlbfwwkdsqyaa"
                data-component="body">
     <br>
-<p>Must be at least 3 characters. Must not be greater than 1000 characters. Example: <code>twsas</code></p>
+<p>Must be at least 3 characters. Must not be greater than 1000 characters. Example: <code>xnlbfwwkdsqyaa</code></p>
         </div>
         </form>
 
