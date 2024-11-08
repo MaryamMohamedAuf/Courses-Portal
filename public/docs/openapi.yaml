@@ -22,37 +22,7 @@ paths:
                 type: array
                 items:
                   type: object
-                example:
-                  -
-                    id: 1
-                    name: deleniti
-                    instructor_name: 'Bryana Harris'
-                    created_at: '2024-11-08T04:39:26.000000Z'
-                    updated_at: '2024-11-08T04:39:26.000000Z'
-                  -
-                    id: 2
-                    name: accusantium
-                    instructor_name: 'Amya Hand'
-                    created_at: '2024-11-08T04:39:26.000000Z'
-                    updated_at: '2024-11-08T04:39:26.000000Z'
-                  -
-                    id: 3
-                    name: assumenda
-                    instructor_name: 'Mrs. Marietta Balistreri V'
-                    created_at: '2024-11-08T04:39:26.000000Z'
-                    updated_at: '2024-11-08T04:39:26.000000Z'
-                  -
-                    id: 4
-                    name: qui
-                    instructor_name: 'Barney Brown'
-                    created_at: '2024-11-08T04:39:26.000000Z'
-                    updated_at: '2024-11-08T04:39:26.000000Z'
-                  -
-                    id: 5
-                    name: maiores
-                    instructor_name: 'Mason Crooks'
-                    created_at: '2024-11-08T04:39:26.000000Z'
-                    updated_at: '2024-11-08T04:39:26.000000Z'
+                example: []
       tags:
         - Endpoints
       security: []
@@ -74,34 +44,18 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: ktvmroratxpzvg
+                  example: sd
                   nullable: false
                 instructor_name:
                   type: string
                   description: ''
-                  example: totam
+                  example: atque
                   nullable: false
               required:
                 - name
                 - instructor_name
       security: []
   '/api/courses/{id}':
-    get:
-      summary: 'Display the specified resource.'
-      operationId: displayTheSpecifiedResource
-      description: ''
-      parameters: []
-      responses:
-        200:
-          description: ''
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ''
-      tags:
-        - Endpoints
-      security: []
     put:
       summary: 'Update the specified resource in storage.'
       operationId: updateTheSpecifiedResourceInStorage
@@ -120,12 +74,12 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: lsocptwegpnjgcwrtyf
+                  example: dl
                   nullable: false
                 instructor_name:
                   type: string
                   description: ''
-                  example: doloremque
+                  example: molestiae
                   nullable: false
               required:
                 - name
@@ -145,14 +99,134 @@ paths:
         in: path
         name: id
         description: 'The ID of the course.'
-        example: 1
+        example: 8
         required: true
         schema:
           type: integer
-  '/api/courses/{courseId}/register':
+  /api/lessons:
+    get:
+      summary: 'Display a listing of the lessons.'
+      operationId: displayAListingOfTheLessons
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                example: []
+      tags:
+        - Endpoints
+      security: []
     post:
-      summary: ''
-      operationId: postApiCoursesCourseIdRegister
+      summary: 'Store a newly created lesson in the database.'
+      operationId: storeANewlyCreatedLessonInTheDatabase
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: dung
+                  nullable: false
+                course_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the courses table.'
+                  example: at
+                  nullable: false
+              required:
+                - title
+                - course_id
+      security: []
+  /api/lessons/create:
+    get:
+      summary: 'Show the form for creating a new lesson (not needed for API, so no implementation).'
+      operationId: showTheFormForCreatingANewLessonnotNeededForAPISoNoImplementation
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'Create method is not used in API.'
+                properties:
+                  message:
+                    type: string
+                    example: 'Create method is not used in API.'
+      tags:
+        - Endpoints
+      security: []
+  '/api/lessons/{id}':
+    get:
+      summary: 'Display the specified lesson.'
+      operationId: displayTheSpecifiedLesson
+      description: ''
+      parameters: []
+      responses:
+        404:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\Lesson] 11'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\Lesson] 11'
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified lesson in the database.'
+      operationId: updateTheSpecifiedLessonInTheDatabase
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: vwjdbxwriyw
+                  nullable: false
+                course_id:
+                  type: string
+                  description: 'The <code>id</code> of an existing record in the courses table.'
+                  example: voluptas
+                  nullable: false
+              required:
+                - title
+                - course_id
+      security: []
+    delete:
+      summary: 'Remove the specified lesson from storage.'
+      operationId: removeTheSpecifiedLessonFromStorage
       description: ''
       parameters: []
       responses: {  }
@@ -162,13 +236,102 @@ paths:
     parameters:
       -
         in: path
-        name: courseId
-        description: ''
-        example: 1
+        name: id
+        description: 'The ID of the lesson.'
+        example: 11
         required: true
         schema:
           type: integer
-  /api/comments:
+  '/api/lessons/{lesson_id}/edit':
+    get:
+      summary: 'Show the form for editing the specified lesson (not needed for API, so no implementation).'
+      operationId: showTheFormForEditingTheSpecifiedLessonnotNeededForAPISoNoImplementation
+      description: ''
+      parameters: []
+      responses:
+        404:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\Lesson] 19'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\Lesson] 19'
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: lesson_id
+        description: 'The ID of the lesson.'
+        example: 19
+        required: true
+        schema:
+          type: integer
+  '/api/courses/{course_id}/{user_id}':
+    post:
+      summary: ''
+      operationId: postApiCoursesCourse_idUser_id
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: course_id
+        description: 'The ID of the course.'
+        example: 18
+        required: true
+        schema:
+          type: integer
+      -
+        in: path
+        name: user_id
+        description: 'The ID of the user.'
+        example: qui
+        required: true
+        schema:
+          type: string
+  '/api/users/{user_id}/achievements':
+    get:
+      summary: ''
+      operationId: getApiUsersUser_idAchievements
+      description: ''
+      parameters: []
+      responses:
+        404:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'No query results for model [App\Models\User] 7'
+                properties:
+                  message:
+                    type: string
+                    example: 'No query results for model [App\Models\User] 7'
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: user_id
+        description: 'The ID of the user.'
+        example: 7
+        required: true
+        schema:
+          type: integer
+  '/api/{id}/comment':
     post:
       summary: 'Store a newly created resource in storage.'
       operationId: storeANewlyCreatedResourceInStorage
@@ -187,11 +350,20 @@ paths:
                 content:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 1000 characters.'
-                  example: igq
+                  example: twsas
                   nullable: false
               required:
                 - content
       security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the api.'
+        example: incidunt
+        required: true
+        schema:
+          type: string
 tags:
   -
     name: Endpoints

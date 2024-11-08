@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "f011b258-ef41-4eab-ab4e-1d5d8d808162",
+        "_postman_id": "af7541e0-35f0-4ed8-8a41-29a84a217b45",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -66,11 +66,11 @@
                                 },
                                 {
                                     "key": "set-cookie",
-                                    "value": "laravel_session=sg0i6pP66kg4nuGlUVWwWtNKwAuXFNNXKbnTBBGb; expires=Fri, 08 Nov 2024 09:55:54 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                    "value": "laravel_session=Gh1fDdVVD1Le39BWOXbJBSacAKa2PZP3PJDyksHE; expires=Fri, 08 Nov 2024 17:03:48 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
                                 }
                             ],
                             "code": 200,
-                            "body": "[{\"id\":1,\"name\":\"deleniti\",\"instructor_name\":\"Bryana Harris\",\"created_at\":\"2024-11-08T04:39:26.000000Z\",\"updated_at\":\"2024-11-08T04:39:26.000000Z\"},{\"id\":2,\"name\":\"accusantium\",\"instructor_name\":\"Amya Hand\",\"created_at\":\"2024-11-08T04:39:26.000000Z\",\"updated_at\":\"2024-11-08T04:39:26.000000Z\"},{\"id\":3,\"name\":\"assumenda\",\"instructor_name\":\"Mrs. Marietta Balistreri V\",\"created_at\":\"2024-11-08T04:39:26.000000Z\",\"updated_at\":\"2024-11-08T04:39:26.000000Z\"},{\"id\":4,\"name\":\"qui\",\"instructor_name\":\"Barney Brown\",\"created_at\":\"2024-11-08T04:39:26.000000Z\",\"updated_at\":\"2024-11-08T04:39:26.000000Z\"},{\"id\":5,\"name\":\"maiores\",\"instructor_name\":\"Mason Crooks\",\"created_at\":\"2024-11-08T04:39:26.000000Z\",\"updated_at\":\"2024-11-08T04:39:26.000000Z\"}]",
+                            "body": "[]",
                             "name": ""
                         }
                     ]
@@ -97,7 +97,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"ktvmroratxpzvg\",\"instructor_name\":\"totam\"}"
+                            "raw": "{\"name\":\"sd\",\"instructor_name\":\"atque\"}"
                         },
                         "description": "",
                         "auth": {
@@ -105,70 +105,6 @@
                         }
                     },
                     "response": []
-                },
-                {
-                    "name": "Display the specified resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/courses\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/courses\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "1",
-                                    "description": "The ID of the course."
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "content-type",
-                                    "value": "text\/html; charset=UTF-8"
-                                },
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "http:\/\/localhost:3000"
-                                },
-                                {
-                                    "key": "access-control-allow-credentials",
-                                    "value": "true"
-                                },
-                                {
-                                    "key": "set-cookie",
-                                    "value": "laravel_session=aXO17LcWSZaM33voGcRHeO6qrIQCLduwGrriINC4; expires=Fri, 08 Nov 2024 09:55:54 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
-                                }
-                            ],
-                            "code": 200,
-                            "body": "",
-                            "name": ""
-                        }
-                    ]
                 },
                 {
                     "name": "Update the specified resource in storage.",
@@ -182,7 +118,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "8",
                                     "description": "The ID of the course."
                                 }
                             ]
@@ -200,7 +136,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"lsocptwegpnjgcwrtyf\",\"instructor_name\":\"doloremque\"}"
+                            "raw": "{\"name\":\"dl\",\"instructor_name\":\"molestiae\"}"
                         },
                         "description": "",
                         "auth": {
@@ -221,7 +157,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "8",
                                     "description": "The ID of the course."
                                 }
                             ]
@@ -246,19 +182,371 @@
                     "response": []
                 },
                 {
-                    "name": "POST api\/courses\/{courseId}\/register",
+                    "name": "Display a listing of the lessons.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
-                            "path": "api\/courses\/:courseId\/register",
+                            "path": "api\/lessons",
                             "query": [],
-                            "raw": "{{baseUrl}}\/api\/courses\/:courseId\/register",
+                            "raw": "{{baseUrl}}\/api\/lessons"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "http:\/\/localhost:3000"
+                                },
+                                {
+                                    "key": "access-control-allow-credentials",
+                                    "value": "true"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "laravel_session=QOjbUW9tyeTvRIGVxvQzSQSJZSqnCkmGbpiWKVrT; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[]",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Show the form for creating a new lesson (not needed for API, so no implementation).",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/lessons\/create",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/lessons\/create"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "http:\/\/localhost:3000"
+                                },
+                                {
+                                    "key": "access-control-allow-credentials",
+                                    "value": "true"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "laravel_session=oICPN3UAC1HuaT6cqXXhr4Dx4eYT2w5FAwWE0sPR; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"message\":\"Create method is not used in API.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created lesson in the database.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/lessons",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/lessons"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"dung\",\"course_id\":\"at\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified lesson.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/lessons\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/lessons\/:id",
                             "variable": [
                                 {
-                                    "id": "courseId",
-                                    "key": "courseId",
-                                    "value": "1",
-                                    "description": ""
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "11",
+                                    "description": "The ID of the lesson."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "http:\/\/localhost:3000"
+                                },
+                                {
+                                    "key": "access-control-allow-credentials",
+                                    "value": "true"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "laravel_session=nJYokD4KzdndkSQifFTEMpuYAPYxbRcjytjju5MV; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\Lesson] 11\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Show the form for editing the specified lesson (not needed for API, so no implementation).",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/lessons\/:lesson_id\/edit",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/lessons\/:lesson_id\/edit",
+                            "variable": [
+                                {
+                                    "id": "lesson_id",
+                                    "key": "lesson_id",
+                                    "value": "19",
+                                    "description": "The ID of the lesson."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "http:\/\/localhost:3000"
+                                },
+                                {
+                                    "key": "access-control-allow-credentials",
+                                    "value": "true"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "laravel_session=TovFrTAn0bVEgpck3lQ7ZGJDOXMMpLCCd3h9YGRK; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\Lesson] 19\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified lesson in the database.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/lessons\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/lessons\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "8",
+                                    "description": "The ID of the lesson."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"vwjdbxwriyw\",\"course_id\":\"voluptas\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified lesson from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/lessons\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/lessons\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "5",
+                                    "description": "The ID of the lesson."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/courses\/{course_id}\/{user_id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/courses\/:course_id\/:user_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/courses\/:course_id\/:user_id",
+                            "variable": [
+                                {
+                                    "id": "course_id",
+                                    "key": "course_id",
+                                    "value": "18",
+                                    "description": "The ID of the course."
+                                },
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "qui",
+                                    "description": "The ID of the user."
                                 }
                             ]
                         },
@@ -282,13 +570,85 @@
                     "response": []
                 },
                 {
+                    "name": "GET api\/users\/{user_id}\/achievements",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/:user_id\/achievements",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/users\/:user_id\/achievements",
+                            "variable": [
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "7",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "http:\/\/localhost:3000"
+                                },
+                                {
+                                    "key": "access-control-allow-credentials",
+                                    "value": "true"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "laravel_session=sGABfJIMiNYgQTE9IdGJ77QjK7vXgiDeY2kAeA8T; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\User] 7\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
                     "name": "Store a newly created resource in storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
-                            "path": "api\/comments",
+                            "path": "api\/:id\/comment",
                             "query": [],
-                            "raw": "{{baseUrl}}\/api\/comments"
+                            "raw": "{{baseUrl}}\/api\/:id\/comment",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "incidunt",
+                                    "description": "The ID of the api."
+                                }
+                            ]
                         },
                         "method": "POST",
                         "header": [
@@ -303,7 +663,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"content\":\"igq\"}"
+                            "raw": "{\"content\":\"twsas\"}"
                         },
                         "description": "",
                         "auth": {

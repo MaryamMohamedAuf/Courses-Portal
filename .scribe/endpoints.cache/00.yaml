@@ -29,13 +29,13 @@ endpoints:
     responses:
       -
         status: 200
-        content: '[{"id":1,"name":"deleniti","instructor_name":"Bryana Harris","created_at":"2024-11-08T04:39:26.000000Z","updated_at":"2024-11-08T04:39:26.000000Z"},{"id":2,"name":"accusantium","instructor_name":"Amya Hand","created_at":"2024-11-08T04:39:26.000000Z","updated_at":"2024-11-08T04:39:26.000000Z"},{"id":3,"name":"assumenda","instructor_name":"Mrs. Marietta Balistreri V","created_at":"2024-11-08T04:39:26.000000Z","updated_at":"2024-11-08T04:39:26.000000Z"},{"id":4,"name":"qui","instructor_name":"Barney Brown","created_at":"2024-11-08T04:39:26.000000Z","updated_at":"2024-11-08T04:39:26.000000Z"},{"id":5,"name":"maiores","instructor_name":"Mason Crooks","created_at":"2024-11-08T04:39:26.000000Z","updated_at":"2024-11-08T04:39:26.000000Z"}]'
+        content: '[]'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           access-control-allow-origin: 'http://localhost:3000'
           access-control-allow-credentials: 'true'
-          set-cookie: 'laravel_session=sg0i6pP66kg4nuGlUVWwWtNKwAuXFNNXKbnTBBGb; expires=Fri, 08 Nov 2024 09:55:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+          set-cookie: 'laravel_session=Gh1fDdVVD1Le39BWOXbJBSacAKa2PZP3PJDyksHE; expires=Fri, 08 Nov 2024 17:03:48 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
         description: null
         custom: []
     responseFields: []
@@ -69,7 +69,7 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: ktvmroratxpzvg
+        example: sd
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -79,69 +79,17 @@ endpoints:
         name: instructor_name
         description: ''
         required: true
-        example: totam
+        example: atque
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      name: ktvmroratxpzvg
-      instructor_name: totam
+      name: sd
+      instructor_name: atque
     fileParameters: []
     responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: 'api/courses/{id}'
-    metadata:
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Display the specified resource.'
-      description: ''
-      authenticated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        name: id
-        description: 'The ID of the course.'
-        required: true
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        custom: []
-    cleanUrlParameters:
-      id: 1
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 200
-        content: ''
-        headers:
-          content-type: 'text/html; charset=UTF-8'
-          cache-control: 'no-cache, private'
-          access-control-allow-origin: 'http://localhost:3000'
-          access-control-allow-credentials: 'true'
-          set-cookie: 'laravel_session=aXO17LcWSZaM33voGcRHeO6qrIQCLduwGrriINC4; expires=Fri, 08 Nov 2024 09:55:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
-        description: null
-        custom: []
     responseFields: []
     auth: []
     controller: null
@@ -170,14 +118,14 @@ endpoints:
         name: id
         description: 'The ID of the course.'
         required: true
-        example: 1
+        example: 8
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: 1
+      id: 8
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -185,7 +133,7 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: lsocptwegpnjgcwrtyf
+        example: dl
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -195,15 +143,15 @@ endpoints:
         name: instructor_name
         description: ''
         required: true
-        example: doloremque
+        example: molestiae
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      name: lsocptwegpnjgcwrtyf
-      instructor_name: doloremque
+      name: dl
+      instructor_name: molestiae
     fileParameters: []
     responses: []
     responseFields: []
@@ -233,14 +181,363 @@ endpoints:
         name: id
         description: 'The ID of the course.'
         required: true
-        example: 1
+        example: 8
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: 1
+      id: 8
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/lessons
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the lessons.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: 'http://localhost:3000'
+          access-control-allow-credentials: 'true'
+          set-cookie: 'laravel_session=QOjbUW9tyeTvRIGVxvQzSQSJZSqnCkmGbpiWKVrT; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/lessons/create
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show the form for creating a new lesson (not needed for API, so no implementation).'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"message":"Create method is not used in API."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: 'http://localhost:3000'
+          access-control-allow-credentials: 'true'
+          set-cookie: 'laravel_session=oICPN3UAC1HuaT6cqXXhr4Dx4eYT2w5FAwWE0sPR; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/lessons
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created lesson in the database.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: dung
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      course_id:
+        name: course_id
+        description: 'The <code>id</code> of an existing record in the courses table.'
+        required: true
+        example: at
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      title: dung
+      course_id: at
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/lessons/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified lesson.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the lesson.'
+        required: true
+        example: 11
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 11
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 404
+        content: |-
+          {
+              "message": "No query results for model [App\\Models\\Lesson] 11"
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: 'http://localhost:3000'
+          access-control-allow-credentials: 'true'
+          set-cookie: 'laravel_session=nJYokD4KzdndkSQifFTEMpuYAPYxbRcjytjju5MV; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/lessons/{lesson_id}/edit'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show the form for editing the specified lesson (not needed for API, so no implementation).'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      lesson_id:
+        name: lesson_id
+        description: 'The ID of the lesson.'
+        required: true
+        example: 19
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      lesson_id: 19
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 404
+        content: |-
+          {
+              "message": "No query results for model [App\\Models\\Lesson] 19"
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: 'http://localhost:3000'
+          access-control-allow-credentials: 'true'
+          set-cookie: 'laravel_session=TovFrTAn0bVEgpck3lQ7ZGJDOXMMpLCCd3h9YGRK; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/lessons/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified lesson in the database.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the lesson.'
+        required: true
+        example: 8
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 8
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: vwjdbxwriyw
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      course_id:
+        name: course_id
+        description: 'The <code>id</code> of an existing record in the courses table.'
+        required: true
+        example: voluptas
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      title: vwjdbxwriyw
+      course_id: voluptas
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/lessons/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified lesson from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the lesson.'
+        required: true
+        example: 5
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 5
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -256,7 +553,7 @@ endpoints:
   -
     httpMethods:
       - POST
-    uri: 'api/courses/{courseId}/register'
+    uri: 'api/courses/{course_id}/{user_id}'
     metadata:
       groupName: Endpoints
       groupDescription: ''
@@ -270,18 +567,29 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      courseId:
-        name: courseId
-        description: ''
+      course_id:
+        name: course_id
+        description: 'The ID of the course.'
         required: true
-        example: 1
+        example: 18
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
+      user_id:
+        name: user_id
+        description: 'The ID of the user.'
+        required: true
+        example: qui
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
     cleanUrlParameters:
-      courseId: 1
+      course_id: 18
+      user_id: qui
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -296,8 +604,63 @@ endpoints:
     custom: []
   -
     httpMethods:
+      - GET
+    uri: 'api/users/{user_id}/achievements'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      user_id:
+        name: user_id
+        description: 'The ID of the user.'
+        required: true
+        example: 7
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      user_id: 7
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 404
+        content: |-
+          {
+              "message": "No query results for model [App\\Models\\User] 7"
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: 'http://localhost:3000'
+          access-control-allow-credentials: 'true'
+          set-cookie: 'laravel_session=sGABfJIMiNYgQTE9IdGJ77QjK7vXgiDeY2kAeA8T; expires=Fri, 08 Nov 2024 17:03:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
       - POST
-    uri: api/comments
+    uri: 'api/{id}/comment'
     metadata:
       groupName: Endpoints
       groupDescription: ''
@@ -310,8 +673,19 @@ endpoints:
     headers:
       Content-Type: application/json
       Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the api.'
+        required: true
+        example: incidunt
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: incidunt
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -319,14 +693,14 @@ endpoints:
         name: content
         description: 'Must be at least 3 characters. Must not be greater than 1000 characters.'
         required: true
-        example: igq
+        example: twsas
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanBodyParameters:
-      content: igq
+      content: twsas
     fileParameters: []
     responses: []
     responseFields: []
