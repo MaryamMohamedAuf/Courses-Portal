@@ -3,66 +3,51 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comment;
+use App\Models\User;
+use App\Services\AchievementAndBadgeService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    protected $AchievementAndBadgeService;
+
+    public function __construct(AchievementAndBadgeService $AchievementAndBadgeService)
     {
-        //
+        $this->AchievementAndBadgeService = $AchievementAndBadgeService;
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Display a listing of the resource.
      */
-    public function create()
+    public function index($user_id)
     {
-        //
+        $comments = Comment::where('user_id', $user_id)->get();
+
+        return response()->json($comments);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request, $user_id)
     {
         $request->validate([
             'content' => 'required|string|min:3|max:1000',
         ]);
+        $user = User::findOrFail($user_id);
 
-        // Find the lesson by ID
-
-        // Create a new comment
         $comment = Comment::create([
-            'user_id' => Auth::id(),
-           // 'lesson_id' => $lesson->id,
+            'user_id' => $user_id,
             'content' => $request->content,
         ]);
+        $this->AchievementAndBadgeService->checkCommentAchievements($user);
+        $this->AchievementAndBadgeService->checkBadge($user);
 
         // Return response with the created comment
         return response()->json([
             'message' => 'Comment successfully added.',
             'comment' => $comment,
         ], 201);
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Comment $comment)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Comment $comment)
-    {
-        //
     }
 
     /**

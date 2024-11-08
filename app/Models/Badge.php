@@ -19,11 +19,13 @@ class Badge extends Model
         'required_achievements',
     ];
 
-    /**
-     * Get the achievements that are associated with the badge.
-     */
     public function achievements()
     {
         return $this->hasMany(Achievement::class);
+    }
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class);
     }
 }

@@ -3,48 +3,49 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+use App\Models\User;
+use App\Services\AchievementAndBadgeService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
+//apply dependency injection
 class CourseController extends Controller
 {
-    public function registerUserForCourse(Request $request, $courseId)
+    public $AchievementAndBadgeService;
+
+    public function __construct(AchievementAndBadgeService $AchievementAndBadgeService)
     {
-        $user = auth()->user();  // Get the authenticated user
+        $this->AchievementAndBadgeService = $AchievementAndBadgeService;
+    }
 
-        // Find the course
+    public function registerUserForCourse(Request $request, $courseId, $userId)
+    {
         $course = Course::findOrFail($courseId);
-
+        $user = User::findOrFail($userId);
         // Enroll the user in the course
         $user->courses()->attach($course);
-
         // Enroll the user in all lessons of the course
         $lessons = $course->lessons; // Get all lessons related to the course
         foreach ($lessons as $lesson) {
-            $user->lessons()->attach($lesson);  // Attach the lesson to the user
+            $user->lessons()->syncWithoutDetaching($lesson);  // Attach the lesson to the user if it is not already watched
         }
+        $this->AchievementAndBadgeService->checkLessonAchievements($user);
+        $this->AchievementAndBadgeService->checkBadge($user);
 
-        // Optionally return a response
         return response()->json([
             'message' => 'User successfully enrolled in course and lessons.',
             'course' => $course,
-            'lessons' => $lessons
+            'lessons' => $lessons,
         ]);
     }
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
-    }
+        $courses = Course::all(); // Retrieve all courses
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+        return response()->json($courses);
     }
 
     /**
@@ -52,23 +53,17 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'instructor_name' => 'required|string',
+        ]);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Course $course)
-    {
-        //
-    }
+        $course = Course::create($validated);
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Course $course)
-    {
-        //
+        return response()->json([
+            'message' => 'Course successfully created.',
+            'course' => $course,
+        ], 201);
     }
 
     /**
@@ -76,7 +71,17 @@ class CourseController extends Controller
      */
     public function update(Request $request, Course $course)
     {
-        //
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'instructor_name' => 'required|string',
+        ]);
+
+        $course->update($validated);
+
+        return response()->json([
+            'message' => 'Course successfully updated.',
+            'course' => $course,
+        ]);
     }
 
     /**
@@ -84,6 +89,10 @@ class CourseController extends Controller
      */
     public function destroy(Course $course)
     {
-        //
+        $course->delete();
+
+        return response()->json([
+            'message' => 'Course successfully deleted.',
+        ]);
     }
 }

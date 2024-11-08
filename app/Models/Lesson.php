@@ -15,7 +15,7 @@ class Lesson extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 
+        'title',
         'course_id',
     ];
 
@@ -26,14 +26,15 @@ class Lesson extends Model
     {
         return $this->belongsTo(Course::class);
     }
+
     public function users()
     {
-    return $this->belongsToMany(User::class, 'user_lesson')->withTimestamps();
+        return $this->belongsToMany(User::class, 'user_lesson')->withTimestamps();
     }
-    
-// 'lesson_user':This is the name of the pivot table that connects the lessons and users tables.
-// In a many-to-many relationship, Laravel expects a pivot table to store the relationships between the two models.
-// The convention is to use the singular form of both table names and combine them alphabetically (lesson_user). 
-//So, lesson_user would store data to link lessons and users together.
+
+    // 'lesson_user':This is the name of the pivot table that connects the lessons and users tables.
+    // In a many-to-many relationship, Laravel expects a pivot table to store the relationships between the two models.
+    // The convention is to use the singular form of both table names and combine them alphabetically (lesson_user).
+    //So, lesson_user would store data to link lessons and users together.
 
 }

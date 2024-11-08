@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use App\Models\Badge;
 use Illuminate\Database\Seeder;
-use App\Models\Achievement;
 
 class BadgeSeeder extends Seeder
 {
@@ -16,12 +15,12 @@ class BadgeSeeder extends Seeder
             ['name' => 'Advanced', 'required_achievements' => 8],
             ['name' => 'Master', 'required_achievements' => 10],
         ];
-
         foreach ($badges as $badge) {
-            Badge::create($badge);
+            Badge::firstOrCreate(
+                ['name' => $badge['name']],
+                ['required_achievements' => $badge['required_achievements']]
+            );
         }
-
-        Achievement::factory()->count(4)->create();
 
     }
 }

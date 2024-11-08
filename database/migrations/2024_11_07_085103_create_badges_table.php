@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('badges', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('required_achievements'); // e.g., 4 for Intermediate        
+            $table->string('name')->unique();
+            $table->integer('required_achievements'); // e.g., 4 for Intermediate
             $table->timestamps();
         });
     }

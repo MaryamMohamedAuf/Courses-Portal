@@ -11,11 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('achievements', function (Blueprint $table) {
+        Schema::create('user_badge', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
-            $table->string('type'); // e.g., 'lessons_watched' or 'comments_written'
-            $table->integer('threshold'); // e.g., 5 lessons or 10 comments
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('badge_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -25,6 +24,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('achievements');
+        Schema::dropIfExists('user_badge');
+
     }
 };

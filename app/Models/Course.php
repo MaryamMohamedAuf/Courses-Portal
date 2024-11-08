@@ -26,6 +26,7 @@ class Course extends Model
     {
         return $this->hasMany(Lesson::class);
     }
+
     public function users()
     {
         return $this->belongsToMany(User::class);

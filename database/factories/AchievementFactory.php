@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Achievement;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class AchievementFactory extends Factory
@@ -14,7 +13,6 @@ class AchievementFactory extends Factory
      */
     public function definition()
     {
-        // You can generate achievements dynamically here
         $achievementData = [
             ['name' => 'First Lesson Watched', 'type' => 'lessons_watched', 'threshold' => 1],
             ['name' => '5 Lessons Watched', 'type' => 'lessons_watched', 'threshold' => 5],
@@ -27,8 +25,6 @@ class AchievementFactory extends Factory
             ['name' => '10 Comments Written', 'type' => 'comments_written', 'threshold' => 10],
             ['name' => '20 Comments Written', 'type' => 'comments_written', 'threshold' => 20],
         ];
-
-        // Randomly select one of the predefined achievements
 
         return [
             'name' => $achievementData[0]['name'],

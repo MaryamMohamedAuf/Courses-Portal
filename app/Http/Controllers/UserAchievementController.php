@@ -1,15 +1,16 @@
 <?php
+
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Models\User;
-use App\Models\Badge;
 use App\Models\Achievement;
+use App\Models\Badge;
+use App\Models\User;
 
 class UserAchievementController extends Controller
 {
     public function index(User $user)
     {
+        //pluck('name'): This method is used to extract only the name attribute from the achievements and returns them as a collection.
         $unlockedAchievements = $user->achievements->pluck('name')->toArray();
         $lessonsWatchedCount = $user->lessons()->count();
         $commentsCount = $user->comments()->count();
@@ -47,13 +48,16 @@ class UserAchievementController extends Controller
             ->toArray();
 
         // Determine current badge
-        $currentBadge = $user->badge->name ?? 'Beginner';
+        //$currentBadge = $user->badge->name ?? 'Beginner';
 
         // Calculate next badge and remaining achievements required
         $achievementsCount = count($unlockedAchievements);
+        $currentBadge = Badge::where('required_achievements', '<=', $achievementsCount)
+            ->orderByDesc('required_achievements')  // Get the highest badge achieved
+            ->first()->name ?? 'No badge';
         $nextBadge = Badge::where('required_achievements', '>', $achievementsCount)
-                          ->orderBy('required_achievements')
-                          ->first();
+            ->orderBy('required_achievements')
+            ->first();
 
         $nextBadgeName = $nextBadge->name ?? 'No further badges';
         $remainingToNextBadge = $nextBadge ? $nextBadge->required_achievements - $achievementsCount : 0;

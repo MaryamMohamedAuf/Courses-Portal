@@ -11,7 +11,7 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, HasApiTokens, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -47,29 +47,33 @@ class User extends Authenticatable
         ];
     }
 
+    public function achievements()
+    {
+        return $this->belongsToMany(Achievement::class, 'user_achievement');
+    }
 
-public function achievements()
-{
-    return $this->belongsToMany(Achievement::class, 'user_achievement');
-}
+    public function badge()
+    {
+        return $this->belongsTo(Badge::class);
+    }
 
-public function badge()
-{
-    return $this->belongsTo(Badge::class);
-}
+    public function lessons()
+    {
+        return $this->belongsToMany(Lesson::class, 'user_lesson')->withTimestamps();
+    }
 
-public function lessons()
-{
-    return $this->belongsToMany(Lesson::class, 'user_lesson')->withTimestamps();
-}
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 
-public function comments()
-{
-    return $this->hasMany(Comment::class);
-}
-public function courses()
-{
-    return $this->belongsToMany(Course::class, 'user_course')->withTimestamps();
-}
+    public function courses()
+    {
+        return $this->belongsToMany(Course::class, 'user_course')->withTimestamps();
+    }
 
+    public function badges()
+    {
+        return $this->belongsToMany(badge::class, 'user_badge')->withTimestamps();
+    }
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Services;
 
 use App\Models\Achievement;
@@ -10,58 +11,50 @@ use Illuminate\Support\Facades\Notification;
 
 class AchievementAndBadgeService
 {
-    public function checkAchievements(User $user)
+    public function checkLessonAchievements(User $user)
     {
-        $this->checkLessonAchievements($user);
-        $this->checkCommentAchievements($user);
-        $this->checkBadge($user);
-    }
+        $lessonsWatchedCount = $user->lessons()->count();
 
-    private function checkLessonAchievements(User $user)
-    {
-        $lessonsWatchedCount = $user->user_lesson()->count();
-        
         // Example: Fetch lesson achievements with thresholds met by the user
         $achievements = Achievement::where('type', 'lessons_watched')
-                                   ->where('threshold', '<=', $lessonsWatchedCount)
-                                   ->get();
+            ->where('threshold', '<=', $lessonsWatchedCount)
+            ->get();
 
         foreach ($achievements as $achievement) {
-            if (!$user->achievements->contains($achievement->id)) {
+            if (! $user->achievements->contains($achievement->id)) {
                 $user->achievements()->attach($achievement);
                 Notification::send($user, new AchievementUnlocked($achievement));
 
             }
+        }
     }
-    }
-    private function checkCommentAchievements(User $user)
+
+    public function checkCommentAchievements(User $user)
     {
         $commentsCount = $user->comments()->count();
-        
+
         // Similar logic for comments
         $achievements = Achievement::where('type', 'comments_written')
-                                   ->where('threshold', '<=', $commentsCount)
-                                   ->get();
+            ->where('threshold', '<=', $commentsCount)
+            ->get();
 
         foreach ($achievements as $achievement) {
-            if (!$user->achievements->contains($achievement->id)) {
+            if (! $user->achievements->contains($achievement->id)) {
                 $user->achievements()->attach($achievement);
             }
-            }
         }
-    
+    }
 
-    private function checkBadge(User $user)
+    public function checkBadge(User $user)
     {
         $achievementsCount = $user->achievements()->count();
-        
+
         $nextBadge = Badge::where('required_achievements', '<=', $achievementsCount)->orderByDesc('required_achievements')->first();
 
-        if ($nextBadge && $user->badge_id !== $nextBadge->id) {
-            $user->badge_id = $nextBadge->id;
+        if ($nextBadge && $user->badges() !== $nextBadge->id) {
+            $user->badges()->attach($nextBadge->id);
             $user->save();
-            Notification::send($user, new BadgeUnlocked($nextBadge));            
+            Notification::send($user, new BadgeUnlocked($nextBadge));
         }
     }
 }
-?>

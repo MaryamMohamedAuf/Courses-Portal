@@ -11,15 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if (!Schema::hasTable('user_achievement')) {
-        Schema::create('user_achievement', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->foreignId('achievement_id')->constrained()->onDelete('cascade');
-            $table->timestamps();
-        });
+        if (! Schema::hasTable('user_achievement')) {
+            Schema::create('user_achievement', function (Blueprint $table) {
+                $table->id();
+                $table->foreignId('user_id')->constrained()->onDelete('cascade');
+                $table->foreignId('achievement_id')->constrained()->onDelete('cascade');
+                $table->timestamps();
+            });
+        }
     }
-    }
+
     /**
      * Reverse the migrations.
      */

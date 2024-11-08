@@ -1,0 +1,198 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost:8000'
+paths:
+  /api/courses:
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                example:
+                  -
+                    id: 1
+                    name: deleniti
+                    instructor_name: 'Bryana Harris'
+                    created_at: '2024-11-08T04:39:26.000000Z'
+                    updated_at: '2024-11-08T04:39:26.000000Z'
+                  -
+                    id: 2
+                    name: accusantium
+                    instructor_name: 'Amya Hand'
+                    created_at: '2024-11-08T04:39:26.000000Z'
+                    updated_at: '2024-11-08T04:39:26.000000Z'
+                  -
+                    id: 3
+                    name: assumenda
+                    instructor_name: 'Mrs. Marietta Balistreri V'
+                    created_at: '2024-11-08T04:39:26.000000Z'
+                    updated_at: '2024-11-08T04:39:26.000000Z'
+                  -
+                    id: 4
+                    name: qui
+                    instructor_name: 'Barney Brown'
+                    created_at: '2024-11-08T04:39:26.000000Z'
+                    updated_at: '2024-11-08T04:39:26.000000Z'
+                  -
+                    id: 5
+                    name: maiores
+                    instructor_name: 'Mason Crooks'
+                    created_at: '2024-11-08T04:39:26.000000Z'
+                    updated_at: '2024-11-08T04:39:26.000000Z'
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: ktvmroratxpzvg
+                  nullable: false
+                instructor_name:
+                  type: string
+                  description: ''
+                  example: totam
+                  nullable: false
+              required:
+                - name
+                - instructor_name
+      security: []
+  '/api/courses/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ''
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      operationId: updateTheSpecifiedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: lsocptwegpnjgcwrtyf
+                  nullable: false
+                instructor_name:
+                  type: string
+                  description: ''
+                  example: doloremque
+                  nullable: false
+              required:
+                - name
+                - instructor_name
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      operationId: removeTheSpecifiedResourceFromStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the course.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  '/api/courses/{courseId}/register':
+    post:
+      summary: ''
+      operationId: postApiCoursesCourseIdRegister
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: courseId
+        description: ''
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/comments:
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                content:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 1000 characters.'
+                  example: igq
+                  nullable: false
+              required:
+                - content
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''

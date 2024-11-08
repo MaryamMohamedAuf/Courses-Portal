@@ -13,6 +13,19 @@ use Illuminate\Validation\Rules;
 
 class RegisteredUserController extends Controller
 {
+    public function getUserIdAndToken(Request $request)
+    {
+        $user = $request->user();
+
+        // Generate a new token for the user (optional)
+        $token = $user->createToken('API Token')->plainTextToken;
+
+        return response()->json([
+            'id' => $user->id,
+            'token' => $token,
+        ]);
+    }
+
     /**
      * Handle an incoming registration request.
      *

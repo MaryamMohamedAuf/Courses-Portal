@@ -1,15 +1,15 @@
 <?php
+
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use App\Models\Achievement;
+use Illuminate\Database\Seeder;
 
 class AchievementSeeder extends Seeder
 {
     public function run()
     {
-        // Use the factory to create predefined achievements
-        Achievement::insert([
+        $achievements = [
             ['name' => 'First Lesson Watched', 'type' => 'lessons_watched', 'threshold' => 1],
             ['name' => '5 Lessons Watched', 'type' => 'lessons_watched', 'threshold' => 5],
             ['name' => '10 Lessons Watched', 'type' => 'lessons_watched', 'threshold' => 10],
@@ -20,6 +20,14 @@ class AchievementSeeder extends Seeder
             ['name' => '5 Comments Written', 'type' => 'comments_written', 'threshold' => 5],
             ['name' => '10 Comments Written', 'type' => 'comments_written', 'threshold' => 10],
             ['name' => '20 Comments Written', 'type' => 'comments_written', 'threshold' => 20],
-        ]);
+
+        ];
+
+        foreach ($achievements as $achievement) {
+            Achievement::firstOrCreate(
+                ['name' => $achievement['name'], 'type' => $achievement['type']],
+                ['threshold' => $achievement['threshold']]
+            );
         }
+    }
 }
